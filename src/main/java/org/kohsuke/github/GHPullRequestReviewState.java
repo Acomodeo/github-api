@@ -4,6 +4,7 @@ public enum GHPullRequestReviewState {
     PENDING(null),
     APPROVED("APPROVE"),
     REQUEST_CHANGES("REQUEST_CHANGES"),
+    CHANGES_REQUESTED("CHANGES_REQUESTED"),
     COMMENTED("COMMENT"),
     DISMISSED(null);
 

@@ -452,7 +452,7 @@ class Requester {
         try {
             return new PagingIterator<T>(type, tailApiUrl, root.getApiURL(s.toString()));
         } catch (IOException e) {
-            throw new Error(e);
+            throw new GHException(e.getMessage(), e);
         }
     }
 
@@ -513,7 +513,7 @@ class Requester {
                     }
                 }
             } catch (IOException e) {
-                throw new Error(e);
+                throw new GHException(e.getMessage(), e);
             }
         }
 

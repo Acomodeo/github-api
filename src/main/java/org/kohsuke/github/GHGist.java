@@ -148,7 +148,7 @@ public class GHGist extends GHObject {
                             for (GHGist c : page)
                                 c.wrapUp(root);
                         } catch (IOException e) {
-                            throw new Error(e);
+                            throw new GHException(e.getMessage(), e);
                         }
                     }
                 };
